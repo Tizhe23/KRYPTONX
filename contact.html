@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#07090f">
+  <meta name="description" content="Krypton Security helps organisations improve cyber resilience with practical offensive and defensive security services.">
+  <title>Contact | Krypton Security</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .hero-copy{max-width:850px;position:relative;z-index:1}
+    .hero h1{max-width:900px}
+    .hero .lead{max-width:650px}
+    .section-intro{max-width:720px}
+    .muted-list{display:grid;gap:.7rem;list-style:none;margin-top:1rem}
+    .muted-list li{display:flex;gap:.65rem;color:var(--dim)}
+    .muted-list li::before{content:'✓';color:var(--ac);font-family:var(--mono)}
+    .mini-label{font:500 .72rem var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--ac)}
+    .panel{padding:clamp(1.3rem,4vw,2.3rem);border:1px solid var(--b1);border-radius:16px;background:linear-gradient(145deg,rgba(79,255,176,.06),transparent 55%),var(--s1)}
+    .terminal{border:1px solid var(--b2);border-radius:14px;overflow:hidden;background:#090d13;box-shadow:0 28px 90px rgba(0,0,0,.25)}
+    .terminal-bar{display:flex;align-items:center;gap:.45rem;padding:.9rem 1rem;border-bottom:1px solid var(--b1);color:var(--mut);font: .7rem var(--mono)}
+    .terminal-bar i{width:8px;height:8px;border-radius:50%;background:var(--b2)}
+    .terminal-body{padding:1.3rem;font: .78rem/2 var(--mono);color:var(--dim);overflow-wrap:anywhere}
+    .terminal-body strong{color:var(--ac);font-weight:500}
+    .terminal-body .blue{color:#5ac8fa}
+    .service-icon{font:600 1.1rem var(--mono);color:var(--ac)}
+    .f .btn{width:max-content}
+    .note{margin-top:.3rem}
+    .numbered{display:grid;gap:1rem;counter-reset:item}
+    .numbered article{counter-increment:item;display:grid;grid-template-columns:42px 1fr;gap:1rem;align-items:start;padding:1.1rem 0;border-bottom:1px solid var(--b1)}
+    .numbered article::before{content:'0' counter(item);font:500 .8rem var(--mono);color:var(--ac)}
+    .numbered h3{margin-bottom:.35rem}
+    .about-statement{font-size:clamp(1.4rem,3.5vw,2.3rem);line-height:1.35;letter-spacing:-.025em;color:var(--tx);max-width:850px}
+    @media(max-width:560px){.f .btn{width:100%}}
+  </style>
+</head>
+<body>
+  <div id="site-header"></div>
+
+<main>
+  <section class="phead bg"><div class="wrap" data-rv>
+    <span class="eyebrow">Contact</span><h1>Let's make security <span class="grad">more manageable.</span></h1>
+    <p class="lead">Tell us a little about your organisation and what you need help with. We'll use that information to understand how best to respond.</p>
+  </div></section>
+  <section style="padding-top:2rem"><div class="wrap split">
+    <div data-rv>
+      <span class="eyebrow">Start here</span><h2>What would you like to protect?</h2>
+      <p>Use the form to describe your priorities, questions or current security challenge. Please do not include passwords, secret keys or sensitive incident data.</p>
+      <div class="clinks">
+        <a class="clink" href="mailto:hello@kryptonsec.com"><div class="ib"><span data-i="mail"></span></div><div><small>Email</small><strong>hello@kryptonsec.com</strong></div></a>
+        <div class="clink"><div class="ib"><span data-i="pin"></span></div><div><small>Location</small><strong>Lagos, Nigeria</strong></div></div>
+      </div>
+      <p style="margin-top:1.2rem;font-size:.8rem">Contact details and service information in this starter site are placeholders until you verify them.</p>
+    </div>
+    <div class="panel" data-rv>
+      <form id="cf" class="f">
+        <div class="two">
+          <div class="fd"><label for="name">Your name</label><input id="name" name="name" autocomplete="name" required minlength="2" placeholder="Jane Doe"><small>Please enter at least 2 characters.</small></div>
+          <div class="fd"><label for="email">Work email</label><input id="email" name="email" type="email" autocomplete="email" required placeholder="jane@company.com"><small>Please enter a valid email address.</small></div>
+        </div>
+        <div class="fd"><label for="organisation">Organisation</label><input id="organisation" name="organisation" autocomplete="organization" required minlength="2" placeholder="Your organisation"><small>Please enter your organisation.</small></div>
+        <div class="fd"><label for="topic">What can we help with?</label><select id="topic" name="topic"><option value="">Select a service (optional)</option><option data-topic="pentest" value="Penetration Testing">Penetration Testing</option><option data-topic="soc" value="SOC-as-a-Service">SOC-as-a-Service</option><option data-topic="cloud" value="Cloud Security">Cloud Security</option><option data-topic="compliance" value="Compliance and GRC">Compliance and GRC</option><option data-topic="intel" value="Threat Intelligence">Threat Intelligence</option><option data-topic="awareness" value="Security Awareness">Security Awareness</option><option value="Other">Other</option></select></div>
+        <div class="fd"><label for="message">Message</label><textarea id="message" name="message" required minlength="10" placeholder="Tell us a little about your priorities..."></textarea><small>Please enter at least 10 characters.</small></div>
+        <p class="note" aria-live="polite"></p>
+        <button class="btn pri" type="submit">Send enquiry <span data-i="arrow"></span></button>
+        <p style="font-size:.75rem">This form sends to the email configured in <code>app.js</code>. Test it after verifying the address and activating FormSubmit.</p>
+      </form>
+    </div>
+  </div></section>
+</main>
+
+  <div id="site-footer"></div>
+  <script src="app.js"></script>
+</body>
+</html>

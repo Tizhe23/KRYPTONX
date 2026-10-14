@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#07090f">
+  <meta name="description" content="Krypton Security helps organisations improve cyber resilience with practical offensive and defensive security services.">
+  <title>About | Krypton Security</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .hero-copy{max-width:850px;position:relative;z-index:1}
+    .hero h1{max-width:900px}
+    .hero .lead{max-width:650px}
+    .section-intro{max-width:720px}
+    .muted-list{display:grid;gap:.7rem;list-style:none;margin-top:1rem}
+    .muted-list li{display:flex;gap:.65rem;color:var(--dim)}
+    .muted-list li::before{content:'✓';color:var(--ac);font-family:var(--mono)}
+    .mini-label{font:500 .72rem var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--ac)}
+    .panel{padding:clamp(1.3rem,4vw,2.3rem);border:1px solid var(--b1);border-radius:16px;background:linear-gradient(145deg,rgba(79,255,176,.06),transparent 55%),var(--s1)}
+    .terminal{border:1px solid var(--b2);border-radius:14px;overflow:hidden;background:#090d13;box-shadow:0 28px 90px rgba(0,0,0,.25)}
+    .terminal-bar{display:flex;align-items:center;gap:.45rem;padding:.9rem 1rem;border-bottom:1px solid var(--b1);color:var(--mut);font: .7rem var(--mono)}
+    .terminal-bar i{width:8px;height:8px;border-radius:50%;background:var(--b2)}
+    .terminal-body{padding:1.3rem;font: .78rem/2 var(--mono);color:var(--dim);overflow-wrap:anywhere}
+    .terminal-body strong{color:var(--ac);font-weight:500}
+    .terminal-body .blue{color:#5ac8fa}
+    .service-icon{font:600 1.1rem var(--mono);color:var(--ac)}
+    .f .btn{width:max-content}
+    .note{margin-top:.3rem}
+    .numbered{display:grid;gap:1rem;counter-reset:item}
+    .numbered article{counter-increment:item;display:grid;grid-template-columns:42px 1fr;gap:1rem;align-items:start;padding:1.1rem 0;border-bottom:1px solid var(--b1)}
+    .numbered article::before{content:'0' counter(item);font:500 .8rem var(--mono);color:var(--ac)}
+    .numbered h3{margin-bottom:.35rem}
+    .about-statement{font-size:clamp(1.4rem,3.5vw,2.3rem);line-height:1.35;letter-spacing:-.025em;color:var(--tx);max-width:850px}
+    @media(max-width:560px){.f .btn{width:100%}}
+  </style>
+</head>
+<body>
+  <div id="site-header"></div>
+
+<main>
+  <section class="phead bg"><div class="wrap" data-rv>
+    <span class="eyebrow">About Krypton</span><h1>Clarity in a <span class="grad">complex threat</span> landscape.</h1>
+    <p class="lead">We believe strong cybersecurity starts with understanding what matters, where risk lives and which actions will make the biggest difference.</p>
+  </div></section>
+  <section><div class="wrap">
+    <div class="panel" data-rv><p class="about-statement">“Security works best when technical insight meets clear communication and practical action.”</p><p style="margin-top:1.25rem">That principle guides the way Krypton approaches security challenges.</p></div>
+  </div></section>
+  <section><div class="wrap split">
+    <div data-rv><span class="eyebrow">Our perspective</span><h2>Less noise. More useful security.</h2><p>Cybersecurity can feel overwhelming when findings are disconnected from the decisions people need to make. Our aim is to make risk easier to understand, prioritise and manage.</p><p style="margin-top:1rem">We focus on useful assessments, understandable recommendations and a security mindset that can improve over time.</p></div>
+    <div class="numbered" data-stagger>
+      <article><div><h3>Understand the context</h3><p>Start with business objectives, critical assets and the risks that matter most.</p></div></article>
+      <article><div><h3>Make priorities clear</h3><p>Distinguish urgent exposure from longer-term improvements.</p></div></article>
+      <article><div><h3>Keep improving</h3><p>Use findings and lessons learned to strengthen controls and readiness.</p></div></article>
+    </div>
+  </div></section>
+  <section><div class="wrap"><div class="cta-band" data-rv><h2>Let's talk about your security goals.</h2><p>Share your challenge and we can work out a sensible next step.</p><div class="acts"><a class="btn pri" href="contact.html">Get in touch <span data-i="arrow"></span></a></div></div></div></section>
+</main>
+
+  <div id="site-footer"></div>
+  <script src="app.js"></script>
+</body>
+</html>

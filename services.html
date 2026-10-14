@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#07090f">
+  <meta name="description" content="Krypton Security helps organisations improve cyber resilience with practical offensive and defensive security services.">
+  <title>Services | Krypton Security</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .hero-copy{max-width:850px;position:relative;z-index:1}
+    .hero h1{max-width:900px}
+    .hero .lead{max-width:650px}
+    .section-intro{max-width:720px}
+    .muted-list{display:grid;gap:.7rem;list-style:none;margin-top:1rem}
+    .muted-list li{display:flex;gap:.65rem;color:var(--dim)}
+    .muted-list li::before{content:'✓';color:var(--ac);font-family:var(--mono)}
+    .mini-label{font:500 .72rem var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--ac)}
+    .panel{padding:clamp(1.3rem,4vw,2.3rem);border:1px solid var(--b1);border-radius:16px;background:linear-gradient(145deg,rgba(79,255,176,.06),transparent 55%),var(--s1)}
+    .terminal{border:1px solid var(--b2);border-radius:14px;overflow:hidden;background:#090d13;box-shadow:0 28px 90px rgba(0,0,0,.25)}
+    .terminal-bar{display:flex;align-items:center;gap:.45rem;padding:.9rem 1rem;border-bottom:1px solid var(--b1);color:var(--mut);font: .7rem var(--mono)}
+    .terminal-bar i{width:8px;height:8px;border-radius:50%;background:var(--b2)}
+    .terminal-body{padding:1.3rem;font: .78rem/2 var(--mono);color:var(--dim);overflow-wrap:anywhere}
+    .terminal-body strong{color:var(--ac);font-weight:500}
+    .terminal-body .blue{color:#5ac8fa}
+    .service-icon{font:600 1.1rem var(--mono);color:var(--ac)}
+    .f .btn{width:max-content}
+    .note{margin-top:.3rem}
+    .numbered{display:grid;gap:1rem;counter-reset:item}
+    .numbered article{counter-increment:item;display:grid;grid-template-columns:42px 1fr;gap:1rem;align-items:start;padding:1.1rem 0;border-bottom:1px solid var(--b1)}
+    .numbered article::before{content:'0' counter(item);font:500 .8rem var(--mono);color:var(--ac)}
+    .numbered h3{margin-bottom:.35rem}
+    .about-statement{font-size:clamp(1.4rem,3.5vw,2.3rem);line-height:1.35;letter-spacing:-.025em;color:var(--tx);max-width:850px}
+    @media(max-width:560px){.f .btn{width:100%}}
+  </style>
+</head>
+<body>
+  <div id="site-header"></div>
+
+<main>
+  <section class="phead bg"><div class="wrap" data-rv>
+    <span class="eyebrow">What we do</span><h1>Practical security for <span class="grad">real-world risk.</span></h1>
+    <p class="lead">From finding weaknesses to improving your response, our services help build a clearer picture of cyber risk and what to do about it.</p>
+  </div></section>
+  <section style="padding-top:2rem"><div class="wrap">
+    <div class="stack">
+      <article class="svc" id="pentest"><div class="ib"><span data-i="radar"></span></div><div><span class="mini-label">01 / Test</span><h3>Penetration Testing</h3><p>Authorised security testing designed to identify exploitable weaknesses in applications, networks and infrastructure. Findings should help teams understand impact and prioritise remediation.</p><ul><li>Web and application security assessments</li><li>Infrastructure and network testing</li><li>Actionable reporting and retest guidance</li></ul><a class="btn" href="contact.html?topic=pentest">Discuss testing <span data-i="arrow"></span></a></div></article>
+      <article class="svc" id="soc"><div class="ib"><span data-i="eye"></span></div><div><span class="mini-label">02 / Detect</span><h3>SOC-as-a-Service</h3><p>Support for improving security visibility, reviewing alerts and building a more consistent approach to threat detection and response.</p><ul><li>Monitoring and alert triage</li><li>Use-case and detection improvement</li><li>Incident escalation planning</li></ul><a class="btn" href="contact.html?topic=soc">Discuss SOC services <span data-i="arrow"></span></a></div></article>
+      <article class="svc" id="cloud"><div class="ib"><span data-i="cloud"></span></div><div><span class="mini-label">03 / Protect</span><h3>Cloud Security</h3><p>Review cloud configurations and identity controls to help reduce avoidable exposure across cloud workloads and services.</p><ul><li>Configuration and posture reviews</li><li>Identity and access control assessment</li><li>Practical cloud hardening recommendations</li></ul><a class="btn" href="contact.html?topic=cloud">Discuss cloud security <span data-i="arrow"></span></a></div></article>
+      <article class="svc" id="compliance"><div class="ib"><span data-i="audit"></span></div><div><span class="mini-label">04 / Govern</span><h3>Compliance and GRC</h3><p>Translate requirements and risk obligations into clear controls, documentation and improvement plans that make sense to the business.</p><ul><li>Gap assessments and risk registers</li><li>Policy and control support</li><li>Governance and remediation planning</li></ul><a class="btn" href="contact.html?topic=compliance">Discuss GRC <span data-i="arrow"></span></a></div></article>
+      <article class="svc" id="intel"><div class="ib"><span data-i="eye"></span></div><div><span class="mini-label">05 / Understand</span><h3>Threat Intelligence</h3><p>Contextual insight into relevant threats and indicators to help teams make better-informed security decisions.</p><ul><li>Threat landscape briefings</li><li>Threat-informed risk reviews</li><li>Intelligence-led security priorities</li></ul><a class="btn" href="contact.html?topic=intel">Discuss threat intelligence <span data-i="arrow"></span></a></div></article>
+      <article class="svc" id="awareness"><div class="ib"><span data-i="users"></span></div><div><span class="mini-label">06 / Empower</span><h3>Security Awareness</h3><p>Help people recognise common attacks and understand the simple actions that make an organisation safer.</p><ul><li>Awareness sessions and learning materials</li><li>Phishing-risk education</li><li>Practical security habits for teams</li></ul><a class="btn" href="contact.html?topic=awareness">Discuss awareness <span data-i="arrow"></span></a></div></article>
+    </div>
+  </div></section>
+  <section><div class="wrap"><div class="cta-band" data-rv><h2>Not sure where to begin?</h2><p>Start with a conversation about your environment, priorities and concerns.</p><div class="acts"><a class="btn pri" href="contact.html">Talk to Krypton <span data-i="arrow"></span></a></div></div></div></section>
+</main>
+
+  <div id="site-footer"></div>
+  <script src="app.js"></script>
+</body>
+</html>
